@@ -1,0 +1,126 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #6b7280, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem auto;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styling */
+#about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 1.8rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+/* Contact Section Styling */
+section h2:not(#about h2) {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1f2937;
+    margin: 1.5rem 0 0.5rem;
+}
+
+section p:not(#about p, header p) {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+section p a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    #about {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    #about h2, section h2:not(#about h2) {
+        font-size: 1.5rem;
+    }
+}
